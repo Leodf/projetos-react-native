@@ -1,7 +1,8 @@
 import React from "react"
 import { Text, View , StyleSheet } from 'react-native'
 
-import UsuarioLogado from "./components/UsuarioLogado"
+import ListaProdutos from "./components/produtos/ListaProdutos"
+// import UsuarioLogado from "./components/UsuarioLogado"
 // import Familia from "./components/relacao/Familia"
 // import Membro from "./components/relacao/Membro"
 // import ParImpar from "./components/ParImpar"
@@ -19,10 +20,11 @@ import UsuarioLogado from "./components/UsuarioLogado"
 
 export default () => (
     <View style = {style.App}>
+        <ListaProdutos />
+        {/*
         <UsuarioLogado usuario = {{nome: 'Gui', email:'gui@gui.com.br'}}/>
         <UsuarioLogado usuario = {{nome: 'Ana'}}/>
         <UsuarioLogado usuario = {{email: 'carlos@empresa.com.br'}}/>
-        {/*
         <Familia>
             <Membro nome='Bia' sobrenome='Arruda' />
             <Membro nome='Carlos' sobrenome='Arruda' />
