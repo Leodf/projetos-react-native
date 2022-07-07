@@ -1,8 +1,9 @@
 import React from "react"
-import { Text, View , StyleSheet } from 'react-native'
+import { Text, SafeAreaView , StyleSheet } from 'react-native'
 
-import ListaProdutos from "./components/produtos/ListaProdutos"
-import ListaProdutosV2 from "./components/produtos/ListaProdutosV2"
+import DigiteSeuNome from "./components/DigiteSeuNome"
+// import ListaProdutos from "./components/produtos/ListaProdutos"
+// import ListaProdutosV2 from "./components/produtos/ListaProdutosV2"
 // import UsuarioLogado from "./components/UsuarioLogado"
 // import Familia from "./components/relacao/Familia"
 // import Membro from "./components/relacao/Membro"
@@ -20,9 +21,10 @@ import ListaProdutosV2 from "./components/produtos/ListaProdutosV2"
 // import Primeiro from './components/Primeiro'
 
 export default () => (
-    <View style = {style.App}>
-        <ListaProdutosV2 />
+    <SafeAreaView style = {style.App}>
+        <DigiteSeuNome />
         {/*
+        <ListaProdutosV2 />
         <ListaProdutos />
         <UsuarioLogado usuario = {{nome: 'Gui', email:'gui@gui.com.br'}}/>
         <UsuarioLogado usuario = {{nome: 'Ana'}}/>
@@ -57,7 +59,7 @@ export default () => (
         <Comp1 />
         <Comp2 />
         <Primeiro />*/}
-    </View>
+    </SafeAreaView>
 ) 
 
 const style = StyleSheet.create({
